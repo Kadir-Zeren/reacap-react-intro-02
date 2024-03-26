@@ -1,3 +1,6 @@
+import "./Content.css";
+import birdBlue from "./img/bird-blue.jpeg";
+
 const Content = () => {
   const parStyle = {
     fontFamily: "tahome",
@@ -27,12 +30,19 @@ const Content = () => {
         src="https://cdn.pixabay.com/photo/2015/11/03/10/23/watercolor-1020509_640.jpg"
         alt=""
       />
+
+      <img src={birdBlue} alt="" />
+
+      <img src="./assets/dandelion.jpeg" alt="dandelion" />
+
       <p style={parStyle}>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente,
         animi reiciendis!
       </p>
 
       <h4 style={parStyle}>Bu bir h4</h4>
+
+      <h3 className="content-h3">Bu bir h3 elementtir</h3>
     </main>
   );
 };
